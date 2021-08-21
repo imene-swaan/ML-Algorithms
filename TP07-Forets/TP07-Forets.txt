@@ -1,0 +1,34 @@
+﻿TP07 : Forêt aléatoire (Random forest)
+======================================
+
+Les étudiants doivent analyser les résultats. 
+Dans ce TP, notre but est d'examiner un problème parmi ceux des arbres de décision. 
+On essayera de régler ce problème avec paramétrage. 
+Ensuite, on intoduira les forêts aléatoires.
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy, matplotlib
+
+DATASETS : Cars Data (classification), Medical Cost Personal Datasets: Insurance Forecast by using Linear Regression (régression)
+
+PLAN : 
+
+I- Arbre de décision : Ici, on reprend les arbres de décisions pour indiquer un des problèmes qui peuvent se passer dans ce type d'apprentissage.
+II- Forêt aléatoire : comparer les forêts aléatoires avec d'autres algorithmes de classement (CART, Naive Bayes, Régression logistique)
+III- Forêt aléatoire (Regression) : comparer les forêts aléatoires avec d'autres algorithmes de régression (CART, Régression linéaire)
+
+QUOI FAIRE : 
+
+I- Arbre de décision : comparer entre deux arbres de décision, un sans limite de profondeur et l'autre avec profondeur max de 7
+    - Analyse de l'étape d'entraînement : temps et convergence 
+    - Analyse de l'étape de test : temps et performance 
+    
+II- Forêt aléatoire : comparer entre les algorithmes de classement
+    - Analyse de l'étape d'entraînement : temps et convergence 
+    - Analyse de l'étape de test : temps et performance 
+    - Analyse de l'effet du nombre des arbres dans un forêt : temps d'entraînement, convergence, temps de test et performance 
+    - Analyse de l'effet de la profondeur max des arbres dans un forêt : temps d'entrainement, convergence, temps de test et performance 
+
+II- Forêt aléatoire : comparer entre les algorithmes de régression
+    - Analyse de l'étape d'entraînement : temps et convergence 
+    - Analyse de l'étape de test : temps et performance 
+    

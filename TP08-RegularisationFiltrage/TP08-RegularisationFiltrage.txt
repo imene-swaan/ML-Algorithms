@@ -1,0 +1,35 @@
+﻿TP08 : Régularisation et sélection d'attributs
+===============================================
+
+Les étudiants doivent implémenter et analyser les résultats. 
+Dans ce TP, notre but est de comprendre comment la régularisation fonctionne. 
+Pour ce faire, on essaye d'implémenter deux fonctions de régularisations pour la régression : L2 (Ridge) et L1 (Lasso)
+Aussi, le deuxième but est de voir comment implémenter un des algorithmes de sélection d'attributs par filtrage : ANOVA
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy, matplotlib
+
+DATASETS : Diabetics prediction using logistic regression.
+
+PLAN : 
+
+I- Régularisation : Ici, on implémente L1 et L2 et on compare entre la régression logistique sans et avec régularisation
+II- Sélection d'attributs : Ici, on implémente "One way ANOVA" utilisé dans le filtrage des attributs
+
+QUOI FAIRE : 
+
+I- Régularisation : 
+    - Inclure régularisation L2 dans la fonction du coût de la régression logistique 
+    - Inclure régularisation L2 dans la fonction du gradient de la régression logistique 
+    - Inclure régularisation L1 dans la fonction du coût de la régression logistique 
+    - Analyser la convergence du coût d'entraînement sans et avec régularisation
+    - Analyser la performance de l'entraînement et de test selon le nombre des itérations
+    - Analyser la convergence des paramètres (thétas) sans et avec résularisation
+    
+    
+II- Sélection d'attributs : 
+    - Compléter la fonction qui calcule ANOVA-F pour CRD (COMPLETELY RANDOM DESIGN)
+    - Analyser les attributs du dataset en se basant sur leurs ANOVA-F
+    - Analyser la convergence du coût sans et avec filtrage 
+    - Analyser la perfomance selon le nombre des itérations sans et avec filtrage 
+
+    

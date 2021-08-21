@@ -1,0 +1,39 @@
+TP03 : Régression logistique Binaire 
+=====================================
+
+Les étudiants doivent compléter le code afin de créer un classifieur binaire en utilisant la régression logistique. 
+Ils doivent, aussi, analyser quelques résultats
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy, matplotlib
+
+DATASETS : notes des étudints générées aléatoirement, COVID19_line_list_data
+
+PLAN : 
+
+1- Implémentation : compléter le code et analyser quelques résultats 
+2- Application sur un exemple simple : estimer si un étudiant est admis ou non selon 2 notes 
+3- Exécution sur un exemple réel : estimer si un patient (coronavirus) va guérir ou non en se basant sur le pays et l'age 
+
+
+QUOI FAIRE : 
+
+1- Implémentation
+    - Réaliser la fonction qui calcule la combination linéaire entre les caractéristiques
+    - Réliser la fonction ségmoid
+    - Réaliser la fonction du cout, utilisée dans la régression logistique 
+    - Réaliser la fonction du gradient
+    - Réaliser la fonction de prédiction 
+
+3- Exécution sur un exemple réel
+    - on veut garder seulement les échantillons où les patients sont rétablis (recovered) ou morts (death)
+    - on veut garder seulement les caractéristiques "country", "age" et "recovered" (DataFrame.filter) 
+    - on veut que les valeurs de "recovered" soient 1 ou 0
+    - TODO filtrer les échantillons avec des valeurs (gender et age) nulles
+    - compléter le  code afin d'entrainer deux modèles : encodage ordinal des pays, encodage onehot des pays
+    - Que remarquez-vous sur l'évolution des couts ? Analysez
+    - compléter le test; ici, on veut la prédiction sous forme de 1 et 0 et pas des probabulités
+    - compléter les fonctions qui calculent la matrice de confusion 
+    - compléter les fonctions rappel et précision 
+    - Comparaison du rappel entre des deux modèles. Que pouvez-vous constater ?
+    - Comparaison la précision entre des deux modèles. Que pouvez-vous constater ?
+    

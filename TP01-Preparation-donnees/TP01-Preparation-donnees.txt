@@ -1,0 +1,14 @@
+TP01 : Introduction à la préparation des données 
+================================================
+
+Ce TP est un tutoriel. C'est une présentation des différentes étapes de préparation des données
+
+OUTILS : Python, Jupyter, pandas, scikit-learn
+
+PLAN : 
+
+1- Lecture des données : comment lire des données CSV, XML, SQL en utilisant pandas 
+2- Intégration des données : Renommer et réorganiser les caractéristiques, Supprimer les échantillons redondants, régler les conflets, etc. 
+3- Nétoyage des données : Supprimer les données avec des valeurs non définies
+4- Transformation des données : Encodage des caractéristiques nominales, Normalisation, Binarisation
+

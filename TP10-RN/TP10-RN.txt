@@ -1,0 +1,42 @@
+﻿TP 10 : Les réseaux de neurones
+=====================================
+
+Dans ce TP, le but est de comprendre le fonctionnement des réseaux de neurones et voir quelques applications.
+Premièrement, les étudiants doivent implémenter quelques fonctions au niveau du neurone. 
+Les fonctions concernées par la couche et le réseau sont données.
+Ils doivent discuter quelques résultats afin 
+
+Ensuite, on passe vers quelques applications dans le traitement d'images. 
+Ici, des modèles de base sont donnés (en utilisant keras) 
+Les étudiants doivent améliorer la performance des modèles. 
+Bien sûr, l'amélioration ne va pas être grande puisque le dataset qu'on a utilisé contient seulement 100 échantillons d'entraînement (MNIST contient 60000) et 30 de test (MNIST contient 10000)
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy, matplotlib, tensorflow, keras
+
+DATASETS : Diabetics prediction using logistic regression, MNIST
+
+PLAN : 
+
+I- Réalisation d'un RN : on essaye d'implémenter un réseau de neurones simple. 
+II- Amélioration d'un modèle : on essaye d'améliorer deux modèles de traitement d'images
+
+QUOI FAIRE : 
+
+I- Réalisation d'un RN : 
+    - Réaliser la dérivée de la fonction d'activation logistique
+    - Réaliser la dérivée de la fonction d'erreur BCE
+    - Compléter la fonction de mise à jours des poids d'un neurone
+    - On remarque que la fonction du coût ne change pas sa valeur lorsqu'on met les thétas à zéro, ce qui indique que les paramètres ne sont pas mis à jour. Pourquoi? Pourtant, lorsqu'il y a une seule couche cachée, les paramètres sont bien mis à jour.
+    - On veut tester l'impact du nombre des couches (et des neurones) sur la convergence et le temps d'entraînement. Pour ce faire, on a proposer 4 architectures avec une couche de sortie d'un seul neurone
+        - Que remarquez-vous ?
+        - Au delà de 2 couches (cas 3 couches), on constate que le modèle a arrêté à converger, comme le cas des paramètres initialisés à zéro. Pourquoi à votre avis ?
+        - Est-ce que ce problème est aussi complexe qu'on aura besoin de plusieurs couches cachées ?
+        - Dans ce problème, en comparant entre les deux architectures : 2 couches cachées et la régression logistique, quelle est la meilleure et pourquoi ?
+    - On veut tester les modèles en se basant sur la métrique "accuracy" et le temps de prédiction.
+        - Que remarquez-vous ?
+        - Pourquoi en augmentant le nombre des couches, le modèle prend plus de temps à prédire le résultat ?
+        
+    
+II- Amélioration d'un modèle : 
+    - Améliorer un modèle de classement des chiffres écrits manuellement 
+    - Améliorer un modèle de débruitage des images

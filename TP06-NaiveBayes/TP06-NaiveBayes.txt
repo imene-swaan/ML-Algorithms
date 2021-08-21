@@ -1,0 +1,29 @@
+﻿TP06 : Naive Bayes
+===================
+
+Les étudiants doivent compléter le code afin de créer un classifieur Naive Bayes pour les caractéristiques nominales. 
+Ils doivent, aussi, comparer entre Naive Bayes, arbres de décision(CART) et la régression logistique dans le contexte de détection de spams.
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy
+
+DATASETS : Jouer (caractéristiques nominales), SMS Spam Collection Dataset
+
+PLAN : 
+
+I- Implémentation : compléter le code et analyser quelques résultats (cours inclu)
+II- Détection de spam : comparer entre  Naive Bayes, arbres de décision(CART) et la régression logistique dans le contexte de détection de spams
+
+QUOI FAIRE : 
+
+I- Implémentation
+    - Estimation de la probabilité antérieure (réalisation) 
+    - Entrainnement dans la loi multinomiale (réalisation)
+    - Estimation de la probabilité de vraissemblance dans la loi multinomiale (réalisation)
+    - Prédiction de la classe (compléter le code)
+    - Comparaison entre la performance d'entrainement avec et sans probabilité antérieure (analyse)
+    
+II- Détection de spam 
+    - Analyse du temps d'apprentissage des trois algorithmes
+    - Analyse du temps de test des trois algorithmes 
+    - Analyse de la performance (precision et rappel) des trois algorithmes
+    

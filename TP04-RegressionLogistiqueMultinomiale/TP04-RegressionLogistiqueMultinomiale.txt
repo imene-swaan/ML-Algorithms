@@ -1,0 +1,32 @@
+TP04 : Régression logistique Multinomiale 
+=========================================
+
+Les étudiants doivent compléter le code afin de créer un classifieur "maximum entropy". 
+Ils doivent, aussi, analyser quelques résultats
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy, matplotlib
+
+DATASETS : Iris
+
+PLAN : 
+
+1- Implémentation : compléter le code et analyser quelques résultats 
+2- Application sur un exemple réel : classer les iris (trois classes) selon deux caractéristiques
+
+
+QUOI FAIRE : 
+
+1- Implémentation
+    - Réliser la fonction de combinaison linéaire 
+    - Réliser la fonction softmax
+    - Réaliser la fonction du cout, utilisée dans la régression logistique Multinomiale 
+    - Réaliser la fonction du gradient
+    - Réaliser la fonction de prédiction 
+
+2- Exécution sur un exemple réel (Rien à programmer ici ; seulement analyser)
+    - Il faut recopier les fonctions de la régression logistique afin de pouvoir exécuter cette partie
+    - Deux solutions pour la classification Multinomiale : one-vs-all (entrainer un modèle logistique binaire pour chaque classe), one-vs-one (entrainer un modème MaxEnt pour toutes les classes.
+    - Que remarquez-vous concernant la convergence de chaque modèle? (les trois modèles binaires)
+    - Que remarquez-vous concernant la convergence du maxent et celle de la classe binaire "Iris-setosa" ? Que pouvez-vous dire à propos de la classe "Iris-setosa"?
+    - Anlysez les résulats (précision, rappel et F1-score) one-vs-all (tois modèles et on choisit le max), one-vs-one (maxent), one-vs-one avec 20 itérations
+    

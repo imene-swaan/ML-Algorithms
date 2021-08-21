@@ -1,0 +1,41 @@
+TP02 : Regression Lineaire 
+===========================
+
+Les étudiants doivent compléter le code afin de créer un regresseur linéaire. 
+Ils doivent, aussi, analyser quelques résultats
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy, matplotlib
+
+DATASETS : prix des maisons
+
+PLAN : 
+
+1- Régression linéaire à une seule variable : compléter le code et analyser quelques résultats 
+2- Régression Polynomiale : comparer entre la régression linéaire et polynomiale de différents degrés
+3- Régression lineaire avec scikit-learn : tutoriel 
+
+
+QUOI FAIRE : 
+
+1- Régression linéaire à une seule variable
+    - Initialiser aléatoirement les paramètres (Théta)
+    - Réaliser la fonction de prédiction 
+    - Réaliser la fonction du cout
+    - Réaliser la fonction du gradient 
+    - Compléter la fonction de la déscente du gradient (entrainnement) 
+    - En appliquant la déscente du gradient on aura un problème. Lequel? Régler le
+    - Pour cette exemple, quel est selon vous le nombre d'itérations nécessaires pour obtenir la convergence dans l'algorithme de la descente du gradient ?
+    - Modifier le code de la décente du gradient pour sortir de la boucle (avant que le nombre des itérations soit fini) lorsque l'erreur ne s'améliore plus.
+    - Donner le nombre des itérations nécessaire pour la convergence (à peu près)
+    - Quel est l'intéret de fixer un nombre des itérations ? Quel est l'intéret d'utiliser le taux d'amélioration ? 
+    - Essayer de changer les valeurs du learning_rate, Afficher le graphe des coûts (J) par rapport aux différents learning_rate. Que remarquez-vous ?
+    - Appliquer la décente du gradient sur les 3 initialisations des paramètres (thetas) : Initialisation aléatoire, Initialisation à zero et Initialisation à un. Est-ce que l'initialisation des paramètres affecte la convergence ?
+    
+2- Régression linéaire à une seule variable
+    - Initialiser aléatoirement les paramètres (Théta)
+    - créer des données similaires à X_train mais avec une colonne X^2
+    - créer des données similaires à X_train2 mais avec une colonne X^3
+    - Que remarquez-vous dans le graphe d'évolutions des couts des trois regrésseurs ?
+    - tester les trois modèles en utilisant la fonction "Root Mean Squared Error" (RMSE)
+    - Quel est le meilleur modèle selon la métrique et les données utilisées ?
+    

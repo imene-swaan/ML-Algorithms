@@ -1,0 +1,41 @@
+TP05 : Arbres de décision 
+==========================
+
+Les étudiants doivent compléter le code afin de créer un classifieur ID3 et un autre CART (classification). 
+Ils doivent, aussi, analyser quelques résultats
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy, graphviz
+
+DATASETS : Jouer (caractéristiques nominales), Jouer (quelques caractéristiques numériques), Iris
+
+PLAN : 
+
+I- ID3 (Implémentation) : compléter le code et analyser quelques résultats (cours inclu)
+II- C4.5 : juste un cours (pas d'implémentation ou d'analyse)
+III- CART (implémentation) : compléter le code et analyser quelques résultats (cours inclu)
+IV- Comparaison et analyse : tester les algorithmes qu'on a implémenté selon plusieurs scénarios et analyser les résultats
+
+
+QUOI FAIRE : 
+
+I- ID3 (Implémentation)
+    - Réaliser la fonction qui calcule la probabilité d'occurence d'une valeur "val" dans un ensemble "S"
+    - Compléter la fonction d'entropie
+    - Réaliser la fonction qui divise un ensemble de sortie "S" selon les valeurs d'un attribut "A" et une valeur "val"
+    - On remarque que l'entropie de l'ensemble (temps = nuageux) égale à 0. Que est ce que ça veut dire ? Est-ce qu'on a besoin de diviser cette ensemble en utilisant une autre caractéristique?
+    - Compléter la fonction qui calcule le gain d'entropie d'un ensemble "S" sur un attribut "A"
+    - En appliquant le gain sur le dataset "Jouer, quelle est la caractéristique qu'on doit utiliser pour diviser le premier noeud de l'arbre? Pourquoi?
+    - Compléter la fonction qui cherche la caractéristique adéquate pour diver un ensemble 
+    - Dans le code généré par ID3, on remarque que l'arbre de décision ne prend pas en considération la caractéristique "temperature". Que pouvez-vous dire à propos de ça?
+
+II- CART (implémentation)
+    - Compléter la fonction qui calcule l'index de diversité de Gini
+    - Réaliser la fonction qui calcule la diversité Gini de la division
+    - Compléter la fonction qui choisit l'attribut et sa valeur de dévision en suivant un pseudo-code (implémentation guidée)
+    - Dans le code généré par CART, on remarque que l'arbre de décision ne prend pas en considération les caractéristiques "humidite" et "vent". Que pouvez-vous dire à propos de ça?
+
+IV- Comparaison et analyse (Pas d'implémentation ici)
+    - Sur des données catégoriques, on compare entre ID3 et CART selon leurs façon de génération de l'arbre. Il faut analyser la profondeur, les caractéristiques utilisées, le type de l'arbre et peut-être l'impact sur la rapidité de prédiction (le pire de cas).
+    - On veut enquêter l'impact de type des caractéristiques. Pour ce faire, on entraîne deux modèles CART sur des données catégoriques et un autre sur des données hétérogènes (catégoriques et nummériques). L'analyse se porte sur le code généré (ou l'arbre) selon les critères précédents. 
+    - On veut tester la performance de trois modèles sur des données de test. On utilise le dataset "Iris" pour entrainer un modèle "ID3" (après discritisation), un modèle "CART" et un modèle "CART" de scikit-learn. La comparaison se porte sur la précision, le rappel et le F1 score.
+    

@@ -1,0 +1,36 @@
+﻿TP09 : Machine à vecteurs de support (SVM)
+===============================================
+
+Les étudiants doivent implémenter l'algorithme SVM et analyser les résultats. 
+Dans ce TP, notre but est de comprendre comment SVM fonctionne. 
+Pour ce faire, on essaye d'implémenter SVM linéaire en utilisant la formulation primale. 
+Pour la résolution, nous avons utilisé la descente des gradients et deux implémentations de la descente stochastique des gradients.
+Ensuite, on essaye d'implémenter SVM non linéaire en utilisant la formulation duale. 
+Pour la résolution, nous avons utilisé "Sequential minimal optimization".
+
+OUTILS : Python, Jupyter, pandas, scikit-learn, numpy, matplotlib
+
+DATASETS : datasets générés automatiquement
+
+PLAN : 
+
+I- SVM Linéaire (LSVM) : on essaye d'implémenter SVM linéaire en utilisant la formulation primale. 
+II- SVM non Linéaire : on essaye d'implémenter SVM non linéaire en utilisant la formulation duale. 
+
+QUOI FAIRE : 
+
+I- SVM Linéaire (LSVM) : 
+    - Réaliser la fonction signe
+    - Réaliser la fonction du coût
+    - Comparer entre la régression logistique et SVM avec variations sur C
+    - Comparer entre les méthodes d'optimisation (GD, SGD, SGD1)
+    - Essayer d'appliquer SVM linéaire sur un problème non linéaire
+    
+    
+II- SVM non Linéaire : 
+    - Réaliser la fonction objectif
+    - Réaliser la fonction de décision
+    - Application du kernel RBF sur des classes non linéairement séparables
+        - Que remarquez-vous concernant la ligne de décision ?
+        - Que remarquez-vous concernant le nombre des itérations ?
+        - A votre avis, pourquoi l'algorithme n'a pas arrêté lorsque la fonction objectif a atteint le maximum ? 
